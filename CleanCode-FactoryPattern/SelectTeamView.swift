@@ -8,11 +8,11 @@
 import SwiftUI
 
 enum PlayerType: String {
-    case pointGard, center
+    case pointGuard, center
     
     var text: String {
         switch self {
-        case .pointGard:
+        case .pointGuard:
             return "Point Guard"
         case .center:
             return "Center"
@@ -35,7 +35,7 @@ struct Center: Player {
 }
 
 struct PointGuard: Player {
-    let playerType: PlayerType = .pointGard
+    let playerType: PlayerType = .pointGuard
     
     func shoot() {
         // Logic for shooting point guard
@@ -46,7 +46,7 @@ struct PointGuard: Player {
 class PlayerFactory {
     func makePlayer(playerType: PlayerType) -> Player {
         switch playerType {
-        case .pointGard:
+        case .pointGuard:
             return PointGuard()
         case .center:
             return Center()
@@ -63,6 +63,11 @@ struct SelectTeamView: View {
             VStack {
                 ForEach(0..<players.count, id: \.self) { index in
                     VStack {
+                        Image("\(players[index].playerType.rawValue)")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 60, height: 60)
+                        
                         Text("\(players[index].playerType.text)")
                     }
                 }
@@ -70,7 +75,7 @@ struct SelectTeamView: View {
             Spacer()
             HStack {
                 Button("Point Guard") {
-                    let player = factory.makePlayer(playerType: .pointGard)
+                    let player = factory.makePlayer(playerType: .pointGuard)
                     players.append(player)
                 }
                 Button("Center") {
