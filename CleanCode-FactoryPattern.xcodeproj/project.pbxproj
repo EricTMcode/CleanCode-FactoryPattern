@@ -11,6 +11,7 @@
 		0786D36E2A599596009CABC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786D36D2A599596009CABC0 /* ContentView.swift */; };
 		0786D3702A599598009CABC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0786D36F2A599598009CABC0 /* Assets.xcassets */; };
 		0786D3732A599598009CABC0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0786D3722A599598009CABC0 /* Preview Assets.xcassets */; };
+		0786D37A2A5995C1009CABC0 /* SelectTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786D3792A5995C1009CABC0 /* SelectTeamView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		0786D36D2A599596009CABC0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0786D36F2A599598009CABC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0786D3722A599598009CABC0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0786D3792A5995C1009CABC0 /* SelectTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTeamView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				0786D36B2A599596009CABC0 /* CleanCode_FactoryPatternApp.swift */,
 				0786D36D2A599596009CABC0 /* ContentView.swift */,
+				0786D3792A5995C1009CABC0 /* SelectTeamView.swift */,
 				0786D36F2A599598009CABC0 /* Assets.xcassets */,
 				0786D3712A599598009CABC0 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0786D36E2A599596009CABC0 /* ContentView.swift in Sources */,
+				0786D37A2A5995C1009CABC0 /* SelectTeamView.swift in Sources */,
 				0786D36C2A599596009CABC0 /* CleanCode_FactoryPatternApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
